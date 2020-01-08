@@ -3,7 +3,7 @@ import Display from './Display'
 import ButtonPanel from './ButtonPanel'
 const App = ()=> {
         return(
-            <div className='main-div'>
+            <div id='main-div'>
         <Display />
             <ButtonPanel />
         </div>
