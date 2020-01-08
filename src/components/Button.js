@@ -4,8 +4,11 @@ const Button = (props) =>{
     const btname = props
         return(
             <button className = 'calc'>
+                {btname}
+            </button>
         );
-}
+};
+
 Button.propTypes = {
-    btname:PropTypes.string
-}
+  btname: PropTypes.string.isRequired,
+};
