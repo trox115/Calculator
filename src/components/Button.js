@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = (props) => {
-  const btname = props;
+  const { btname } = props;
   return <button className="calc" type="button" >{btname}</button>
 };
 
 Button.propTypes = {
-  btname: PropTypes.string.isRequired,
+  btname: PropTypes.string,
 };
 
 export default Button;
