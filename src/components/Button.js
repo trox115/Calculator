@@ -7,7 +7,7 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
-  btname: PropTypes.string,
+  btname: PropTypes.string.isRequired,
 };
 
 export default Button;
