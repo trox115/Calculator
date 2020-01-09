@@ -1,0 +1,31 @@
+#main-div{
+    width:700px;
+    margin-lef:auto;
+    margin-right:auto;
+    display:flex;
+    flex-wrap:wrap;
+}
+.total{
+    width:100%;
+    flex-basis:100%;
+    background:grey;
+    height:100px;
+    color:white;
+display:flex;
+align-items:center;
+justify-content:flex-end;
+font-size:3rem;
+font-weight:900;
+padding:5px;
+}
+
+.Buttons{
+    flex-basis:100%;
+}
+.group1,.group2,.group3,.group4,.group5{
+    width:100%;
+    display:flex;
+}
+.calc{
+    flex-basis:25%;
+}
