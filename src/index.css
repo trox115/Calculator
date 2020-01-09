@@ -30,6 +30,8 @@ padding:5px;
 .calc{
     flex-basis:25%;
     border:1px solid gray;
+    font-size:1.5rem;
+    cursor:pointer;
 }
 .basis50{
     flex-basis:50%;
