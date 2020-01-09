@@ -29,5 +29,7 @@ padding:5px;
 }
 .calc{
     flex-basis:25%;
-
+}
+.basis50{
+    flex-basis:50%;
 }

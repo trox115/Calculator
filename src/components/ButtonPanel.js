@@ -29,7 +29,6 @@ const ButtonPanel = () => (
     </div>
     <div className="group5">
       <Button btname="0" type="Button" />
-      <Button btname="," type="Button" />
       <Button btname="." type="Button" />
       <Button btname="=" type="Button" />
     </div>
