@@ -29,6 +29,7 @@ padding:5px;
 }
 .calc{
     flex-basis:25%;
+    border:1px solid gray;
 }
 .basis50{
     flex-basis:50%;

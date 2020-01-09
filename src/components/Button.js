@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = (props) => {
-  const { btname } = props;
-    if (btname==='0'){
-  return <button className="calc basis50" type="button">{btname}</button>;
-    }else{
-  return <button className="calc" type="button">{btname}</button>;
+   let cssClass=['calc'];
+  const { btname,wide } = props;
+    if(wide){
+        cssClass.push('basis50');
     }
+  return <button className={cssClass.join(' ')} type="button">{btname}</button>;
 };
 
 Button.propTypes = {
