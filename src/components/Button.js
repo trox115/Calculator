@@ -3,9 +3,12 @@ import PropTypes from 'prop-types';
 
 const Button = (props) => {
    let cssClass=['calc'];
-  const { btname,wide } = props;
+  const { btname,wide,color } = props;
     if(wide){
         cssClass.push('basis50');
+    }
+    if(color){
+        cssClass.push(color);
     }
   return <button className={cssClass.join(' ')} type="button">{btname}</button>;
 };

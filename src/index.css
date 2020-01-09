@@ -1,6 +1,6 @@
 #main-div{
     width:700px;
-    margin-lef:auto;
+    margin-left:auto;
     margin-right:auto;
     display:flex;
     flex-wrap:wrap;
@@ -33,4 +33,7 @@ padding:5px;
 }
 .basis50{
     flex-basis:50%;
+}
+.orange{
+    background:#F5913E;
 }
