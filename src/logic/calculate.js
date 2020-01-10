@@ -1,7 +1,7 @@
 import operate from './operate';
 
 const calculate = (obj, btname) => {
-  let object = obj;
+  const object = obj;
   const { next, operation } = object;
   let { total } = object;
 
