@@ -18,7 +18,7 @@ const Button = (props) => {
 };
 
 Button.defaultProps = {
-  color: 'gray',
+  color: 'orange',
   wide: '',
 };
 Button.propTypes = {
