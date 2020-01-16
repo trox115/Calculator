@@ -11,7 +11,7 @@ const Button = (props) => {
     cssClass.push(color);
   }
   return (
-    <button className={cssClass.join(' ')} type="button">
+    <button className={cssClass.join(' ')} type="button" onClick={props.onClick}>
       {btname}
     </button>
   );
