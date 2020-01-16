@@ -1,8 +1,8 @@
 const Big = require('big.js');
 
 function operate(numberOne, numberTwo, operation) {
-  const num1 = new Big(numberOne);
-  const num2 = new Big(numberTwo);
+  const num1 = Big(numberOne);
+  const num2 = Big(numberTwo);
   let result = 0;
   switch (operation) {
     case '-':

@@ -1,7 +1,13 @@
 import React from 'react';
 import Button from './Button';
 
-const ButtonPanel = () => (
+class ButtonPanel extends React.Component{
+    handle(btname){
+        this.props.onClick(btname);
+    }
+
+    render(){
+        return (
   <div className="Buttons">
     <div className="group1">
         <Button btname="AC" type="Button" color="gray" onClick={() =>this.handle('AC') }/>
@@ -10,7 +16,7 @@ const ButtonPanel = () => (
       <Button btname="/" type="Button" onClick={() =>this.handle('/') }/>
     </div>
     <div className="group2">
-      <Button btname="7" type="Button" color="gray" onClick={() =>this.handle('7') }/>
+      <Button btname="7" type="Button" color="gray" onClick={() =>this.handle(7) }/>
       <Button btname="8" type="Button" color="gray" onClick={() =>this.handle('8') }/>
       <Button btname="9" type="Button" color="gray" onClick={() =>this.handle('9') }/>
       <Button btname="X" type="Button" onClick={() =>this.handle('X') }/>
@@ -34,5 +40,6 @@ const ButtonPanel = () => (
     </div>
   </div>
 );
-
+    }
+}
 export default ButtonPanel;
