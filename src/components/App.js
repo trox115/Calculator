@@ -31,7 +31,7 @@ class App extends React.Component {
         return (
             <div id="main-div">
          <Display value = { value } />
-         <ButtonPanel onClick={btname =>this.handleClick(btname)} />
+         <ButtonPanel onClick={btname =>this.handleClick(btname) } />
   </div>
 )
     }
