@@ -1,8 +1,10 @@
-const Big = require('big.js');
+var Big = require('big.js');
 
-function operate(numberOne, numberTwo, operation) {
-  const num1 = Big(numberOne);
-  const num2 = Big(numberTwo);
+const operate = (numberOne, numberTwo, operation) => {
+    console.log(numberOne+" numero")
+    console.log(numberTwo+" numero 2")
+  let num1 = Big(numberOne);
+  let num2 = Big(numberTwo);
   let result = 0;
   switch (operation) {
     case '-':
@@ -29,6 +31,6 @@ function operate(numberOne, numberTwo, operation) {
       result = 0;
       break;
   }
-  return result.toString;
+  return result.toString();
 }
 export default operate;

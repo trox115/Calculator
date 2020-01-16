@@ -19,7 +19,7 @@ const Button = (props) => {
 
 Button.defaultProps = {
   color: 'orange',
-  wide: '',
+  wide: 0,
 };
 Button.propTypes = {
   btname: PropTypes.string.isRequired,

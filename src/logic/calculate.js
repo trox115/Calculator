@@ -1,17 +1,18 @@
 import operate from './operate';
 
 const calculate = (obj, btname) => {
-  const object = obj;
-  const { next, operation } = object;
-  let { total } = object;
+    console.log(obj)
+  const { next, operation } = obj;
+  let { total } = obj;
 
   if (btname === '+/-') {
     total *= -1;
-    object.total = total;
+    obj.total = total;
   } else {
-    object.total = operate(total, next, operation);
+    obj.total = operate(total, next, operation);
+      obj.operation= operation
   }
-  return object;
+  return obj;
 };
 const isNumber = (obj, btname) => {
     let { total, next } = obj
@@ -31,6 +32,20 @@ const isNumber = (obj, btname) => {
     return { next, operation, total }
 }
 
+const isOperator = (obj,btname) => {
+    let { next, operation, total } = obj
+    let operator = btname;
+    const { total: tot} = calculate(obj,operator);
+    if (operator === '='){
+        next = null;
+        total = tot.toString();
+    } else {
+        next = null;
+        operation =operator;
+        total = tot
+    }
+    return {next,operation, total }
+}
 const main = (obj,btname) => {
     let { next, operation, total } = obj
     if (isNaN(btname)===false){
@@ -40,4 +55,4 @@ const main = (obj,btname) => {
     }
     return {next, operation, total}
 }
-export default calculate;
+export default main;

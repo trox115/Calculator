@@ -2,7 +2,7 @@ import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 /* eslint-disable no-unused-vars */
-import calculate from '../logic/calculate';
+import main from '../logic/calculate';
 
 class App extends React.Component {
     constructor(props){
@@ -14,12 +14,13 @@ class App extends React.Component {
         }
     };
     handle(btname){
-        const { next, operation, total } = calculate(this.state, btname)
+        const { next, operation, total } =main(this.state, btname)
         this.setState({
             operation,
             total,
             next,
         });
+        console.log("heu")
     }
     render(){
         let value = null;
@@ -30,7 +31,7 @@ class App extends React.Component {
         }
         return (
             <div id="main-div">
-         <Display value = { value } />
+         <Display value = { value.toString() } />
          <ButtonPanel onClick={btname =>this.handle(btname) } />
   </div>
 )

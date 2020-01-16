@@ -4,6 +4,7 @@ import Button from './Button';
 class ButtonPanel extends React.Component{
     handle(btname){
         this.props.onClick(btname);
+        console.log(btname)
     }
 
     render(){
@@ -34,7 +35,7 @@ class ButtonPanel extends React.Component{
       <Button btname="+" type="Button" color="orange" onClick={() =>this.handle('+') }/>
     </div>
     <div className="group5">
-      <Button btname="0" type="Button" wide="1" color="gray" onClick={() =>this.handle('0') }/>
+      <Button btname="0" type="Button" wide={1} color="gray" onClick={() =>this.handle('0') }/>
       <Button btname="." type="Button" color="gray" onClick={() =>this.handle('.') }/>
       <Button btname="=" type="Button" onClick={() =>this.handle('=') }/>
     </div>
