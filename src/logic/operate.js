@@ -16,7 +16,11 @@ function operate(numberOne, numberTwo, operation) {
       result = num1.times(num2);
       break;
     case '/':
-      result = num1.div(num2);
+      if (num2 === 0) {
+        result = 'Cannot divide by 0';
+      } else {
+        result = num1.div(num2);
+      }
       break;
     case '%':
       result = num1.times(num2) / 100;
