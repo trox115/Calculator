@@ -1,10 +1,11 @@
 import operate from './operate';
 
 const calculate = (obj, btname) => {
-    console.log(obj)
   const { next, operation } = obj;
   let { total } = obj;
 
+      console.log(total +"total")
+      console.log(next +" next")
   if (btname === '+/-') {
     total *= -1;
     obj.total = total;
@@ -31,14 +32,13 @@ const isNumber = (obj, btname) => {
     }
     return { next, operation, total }
 }
-
 const isOperator = (obj,btname) => {
     let { next, operation, total } = obj
     let operator = btname;
     const { total: tot} = calculate(obj,operator);
     if (operator === '='){
         next = null;
-        total = tot.toString();
+        total = tot;
     } else {
         next = null;
         operation =operator;
@@ -46,13 +46,18 @@ const isOperator = (obj,btname) => {
     }
     return {next,operation, total }
 }
-const main = (obj,btname) => {
-    let { next, operation, total } = obj
-    if (isNaN(btname)===false){
-        ({next, operation, total}=isNumber(obj,btname));
-    }else{
-        ({next, operation, total}=isOperator(obj,btname));
-    }
-    return {next, operation, total}
-}
+const main = (calculator, btnamee) => {
+  let { next, operation, total } = calculator;
+
+  if (btnamee === 'AC') {
+    ({ next, operation, total } = { next: null, operation: null, total: null });
+  } else if (isNaN(btnamee)=== false ) {
+    ({ next, operation, total } =isNumber(calculator, btnamee));
+  } else {
+    ({ next, operation, total } =isOperator(calculator, btnamee));
+  }
+
+  return { next, operation, total };
+};
 export default main;
+
