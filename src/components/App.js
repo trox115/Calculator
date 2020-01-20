@@ -24,12 +24,12 @@ class App extends React.Component {
   }
 
   render() {
-    const { next , operation, total }= this.state;
+    const { next, operation, total } = this.state;
     let value = null;
     if (operation === null) {
-      value = total ? total : '0';
+      value = total ;
     } else {
-      value = next ? next : total;
+      value = next ;
     }
     return (
       <div id="main-div">
