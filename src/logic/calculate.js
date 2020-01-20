@@ -1,15 +1,16 @@
 import operate from './operate';
 
 const calculate = (obj, btname) => {
-  const { next, operation } = obj;
-  let { total } = obj;
+  let object = obj;
+  const { next, operation } = object;
+  let { total } = object;
 
   if (btname === '+/-') {
     total *= -1;
-    obj.total = total;
+    object.total = total;
   } else {
-    obj.total = operate(total, next, operation);
-    obj.operation = operation;
+    object.total = operate(total, next, operation);
+    object.operation = operation;
   }
   return obj;
 };
