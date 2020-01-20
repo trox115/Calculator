@@ -13,15 +13,16 @@ class App extends React.Component {
       total: null,
     };
   }
+
   handle(btname) {
-    const {next, operation, total} = main(this.state, btname);
+    const { next, operation, total } = main(this.state, btname);
     this.setState({
       operation,
       total,
       next,
     });
-    console.log('heu');
   }
+
   render() {
     let value = null;
     if (this.state.operation == null) {
