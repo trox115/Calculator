@@ -24,9 +24,7 @@ class App extends React.Component {
   }
 
   render() {
-    const operation = this.state.operation;
-    const total = this.state.total
-    const next = this.state.next;
+    const { next , operation, total }= this.state;
     let value = null;
     if (operation === null) {
       value = total ? total : '0';
