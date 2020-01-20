@@ -3,9 +3,9 @@ import Button from './Button';
 
 class ButtonPanel extends React.Component {
   handle(btname) {
-    const btName = btname;
+    const btName = this.btname;
     const prps = this.props;
-    prps.onClick(btname);
+    prps.onClick(btName);
   }
 
   render() {
