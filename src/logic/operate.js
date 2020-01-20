@@ -6,8 +6,10 @@ const operate = (numberOne, numberTwo, operation) => {
   let num1 = Big(numberOne);
   let num2 = Big(numberTwo);
   let result = 0;
-    if (operation === '/' && num2 === 0){
+    if (operation === '/' && numberTwo ==='0' ){
+
     result = 'Cannot divide by 0'
+        return result;
     } else {
 
   switch (operation) {
