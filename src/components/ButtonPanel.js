@@ -3,8 +3,8 @@ import Button from './Button';
 
 class ButtonPanel extends React.Component {
   handle(btname) {
-    this.props.onClick(btname);
-    console.log(btname);
+      const btName = btname;
+    this.props.onClick(btName);
   }
 
   render() {
