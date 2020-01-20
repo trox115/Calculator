@@ -7,7 +7,7 @@ const operate = (numberOne, numberTwo, operation) => {
   if (operation === '/' && numberTwo === '0') {
     result = 'Cannot divide by 0';
     return result;
-  } else {
+  }
     switch (operation) {
       case '-':
         result = num1.minus(num2);
@@ -28,7 +28,6 @@ const operate = (numberOne, numberTwo, operation) => {
         result = 0;
         break;
     }
-  }
   return result.toString();
 };
 
