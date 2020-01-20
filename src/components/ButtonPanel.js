@@ -5,7 +5,7 @@ class ButtonPanel extends React.Component {
   handle(btname) {
     const btName = btname;
     const prps = this.props;
-    prps.onClick(btName);
+    prps.onClick(btname);
   }
 
   render() {
