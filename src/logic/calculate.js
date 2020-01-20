@@ -1,8 +1,8 @@
 import operate from './operate';
 
 const calculate = (obj, btname) => {
-  const {next, operation} = obj;
-  let {total} = obj;
+  const { next, operation } = obj;
+  let { total } = obj;
 
   if (btname === '+/-') {
     total *= -1;
@@ -15,8 +15,8 @@ const calculate = (obj, btname) => {
 };
 
 const isNumber = (calculator, btname) => {
-  let {total, next} = calculator;
-  const {operation} = calculator;
+  let { total, next } = calculator;
+  const { operation } = calculator;
   if (operation === null) {
     if (total === null) {
       total = btname;
