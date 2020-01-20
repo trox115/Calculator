@@ -59,7 +59,8 @@ const main = (calculator, btname) => {
 
   if (btname === 'AC' || total === 'Cannot divide by 0') {
     ({ next, operation, total } = { next: null, operation: null, total: null });
-  } else if (window.isNaN(btname) === false) {
+      // eslint-disable-next-line no-restricted-globals
+  } else if (!isNaN(btname)) {
     ({ next, operation, total } = isNumber(calculator, btname));
   } else {
     ({ next, operation, total } = isOperator(calculator, btname));
