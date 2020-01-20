@@ -57,7 +57,7 @@ const main = (calculator, btname) => {
   let { next, operation, total } = calculator;
 
   if (btname === 'AC' || total === 'Cannot divide by 0') {
-    ({ next, operation, total } = {next: null, operation: null, total: null});
+    ({ next, operation, total } = { next: null, operation: null, total: null });
   } else if (!isNaN(btname)) {
     ({ next, operation, total } = isNumber(calculator, btname));
   } else {
