@@ -1,11 +1,15 @@
 import React from 'react';
 import Button from './Button';
+import PropTypes from 'prop-types'
 
 class ButtonPanel extends React.Component {
+ static propTypes = {
+   btname: PropTypes.string,
+ };
+
   handle(btname) {
-    const btName = this.btname;
     const prps = this.props;
-    prps.onClick(btName);
+    prps.onClick(btname);
   }
 
   render() {
@@ -120,4 +124,5 @@ class ButtonPanel extends React.Component {
     );
   }
 }
+
 export default ButtonPanel;
