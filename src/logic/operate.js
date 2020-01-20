@@ -6,6 +6,10 @@ const operate = (numberOne, numberTwo, operation) => {
   let num1 = Big(numberOne);
   let num2 = Big(numberTwo);
   let result = 0;
+    if (operation === '/' && num2 === 0){
+    result = 'Cannot divide by 0'
+    } else {
+
   switch (operation) {
     case '-':
       result = num1.minus(num2);
@@ -18,11 +22,7 @@ const operate = (numberOne, numberTwo, operation) => {
       result = num1.times(num2);
       break;
     case '/':
-      if (num2 === 0) {
-        result = 'Cannot divide by 0';
-      } else {
         result = num1.div(num2);
-      }
       break;
     case '%':
       result = num1.times(num2) / 100;
@@ -31,6 +31,7 @@ const operate = (numberOne, numberTwo, operation) => {
       result = 0;
       break;
   }
+    }
   return result.toString();
 }
 export default operate;
