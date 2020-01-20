@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 class ButtonPanel extends React.Component {
- static propTypes = {
+ propTypes = {
    btname: PropTypes.string,
  };
 
