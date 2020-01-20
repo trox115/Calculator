@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 const Button = (props) => {
   const cssClass = ['calc'];
-  const { btname, wide, color } = props;
+  const prps = props
+  const { btname, wide, color } =prps;
   if (wide) {
     cssClass.push('basis50');
   }
@@ -11,7 +12,7 @@ const Button = (props) => {
     cssClass.push(color);
   }
   return (
-    <button className={cssClass.join(' ')} type="button" onClick={props.onClick}>
+    <button className={cssClass.join(' ')} type="button" onClick={prps.onClick}>
       {btname}
     </button>
   );
