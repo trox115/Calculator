@@ -27,9 +27,9 @@ class App extends React.Component {
     const { next, operation, total } = this.state;
     let value = null;
     if (operation === null) {
-      value = total ? total : '0';
+      value = total || '0';
     } else {
-      value = next ? next : total;
+      value = next || total;
     }
     return (
       <div id="main-div">
