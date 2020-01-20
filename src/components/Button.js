@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const Button = (props) => {
   const cssClass = ['calc'];
-  const prps = props
-  const { btname, wide, color } =prps;
+  const prps = props;
+  const { btname, wide, color } = prps;
   if (wide) {
     cssClass.push('basis50');
   }
