@@ -6,7 +6,7 @@ class ButtonPanel extends React.Component {
   handle(btname) {
     const prps = this.props;
     const btName = btname;
-    // eslint-disable-next-line prop-types
+    /* eslint react/prop-types: 0 */
     prps.onClick(btName);
   }
 
