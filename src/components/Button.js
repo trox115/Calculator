@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = (props) => {
+class Button extends React.Component {
+  handle = () => {
+      console.log(this.props.btname)
+    this.props.handle(this.props.btname);
+  }
+render (){
+    const prps = this.props;
   const cssClass = ['calc'];
-  const prps = props;
   const { btname, wide, color } = prps;
   if (wide) {
     cssClass.push('basis50');
@@ -12,12 +17,12 @@ const Button = (props) => {
     cssClass.push(color);
   }
   return (
-    <button className={cssClass.join(' ')} type="button" onClick={prps.onClick}>
+    <button className={cssClass.join(' ')} type="button" onClick={this.handle}>
       {btname}
     </button>
   );
 };
-
+}
 Button.defaultProps = {
   color: 'orange',
   wide: 0,
