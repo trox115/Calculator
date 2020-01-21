@@ -1,15 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
-
-ButtonPanel.propTypes = {
-  btname: PropTypes.string.isRequired,
-};
 
 class ButtonPanel extends React.Component {
   handle(btname) {
-    const btName = btname;
     const prps = this.props;
-    prps.onClick(btName);
+    prps.onClick(btname);
   }
 
   render() {
@@ -124,5 +120,9 @@ class ButtonPanel extends React.Component {
     );
   }
 }
+
+ButtonPanel.propTypes = {
+  btname: PropTypes.string.isRequired,
+};
 
 export default ButtonPanel;
