@@ -1,10 +1,11 @@
 import React from 'react';
 import Button from './Button';
 
+const propTypes = {
+  btname: PropTypes.string.isRequired,
+};
+
 class ButtonPanel extends React.Component {
-  static propTypes = {
-    btname: PropTypes.string.isRequired,
-  };
   handle(btname) {
     const btName = btname;
     const prps = this.props;
