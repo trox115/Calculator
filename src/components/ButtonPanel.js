@@ -5,7 +5,9 @@ import Button from './Button';
 class ButtonPanel extends React.Component {
   handle(btname) {
     const prps = this.props;
-    prps.onClick(this.btname);
+    const btName = btname;
+    // eslint-disable-next-line prop-types
+    prps.onClick(btName);
   }
 
   render() {
@@ -120,9 +122,5 @@ class ButtonPanel extends React.Component {
     );
   }
 }
-
-ButtonPanel.propTypes = {
-  btname: PropTypes.string.isRequired,
-};
 
 export default ButtonPanel;
