@@ -122,7 +122,7 @@ class ButtonPanel extends React.Component {
 }
 
 ButtonPanel.propTypes = {
-  btname: PropTypes.string,
-}
+  btname: PropTypes.string.isRequired,
+};
 
 export default ButtonPanel;
