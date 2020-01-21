@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-const propTypes = {
+ButtonPanel.propTypes = {
   btname: PropTypes.string.isRequired,
 };
 
