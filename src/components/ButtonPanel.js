@@ -4,7 +4,7 @@ import Button from './Button';
 class ButtonPanel extends React.Component {
   static propTypes = {
     btname: PropTypes.string.isRequired,
-  }
+  };
   handle(btname) {
     const btName = btname;
     const prps = this.props;
