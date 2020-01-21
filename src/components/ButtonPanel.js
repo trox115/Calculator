@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 class ButtonPanel extends React.Component {
- propTypes = {
-   btname: PropTypes.string,
- };
-
   handle(btname) {
     const prps = this.props;
     prps.onClick(btname);
@@ -123,6 +119,10 @@ class ButtonPanel extends React.Component {
       </div>
     );
   }
+}
+
+ButtonPanel.propTypes = {
+  btname: PropTypes.string,
 }
 
 export default ButtonPanel;
