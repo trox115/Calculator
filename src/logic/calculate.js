@@ -36,20 +36,20 @@ const isOperator = (calculator, btname) => {
   let { next, operation, total } = calculator;
   if (operation === null || next === null) {
     if (btname === '+/-') {
-      const { total: calcTotal } = calculate(calculator, btname);
-      total = calcTotal;
+      const { total: tot } = calculate(calculator, btname);
+      total = tot;
     } else {
       operation = btname;
     }
   } else {
-    const { total: calcTotal } = calculate(calculator, btname);
+    const { total: tot } = calculate(calculator, btname);
     if (btname === '=') {
       next = null;
-      total = calcTotal;
+      total = tot;
     } else {
       next = null;
       operation = btname;
-      total = calcTotal;
+      total = tot;
     }
   }
   return { next, operation, total };
