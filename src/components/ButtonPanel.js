@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-class ButtonPanel extends React.Component {
+export default class ButtonPanel extends React.Component {
   render() {
     return (
          <div className="Buttons">
@@ -107,10 +107,9 @@ class ButtonPanel extends React.Component {
           <Button btname="=" type="Button"
            handleClick={this.props.handleClick}
           />
-        </div>
       </div>
+        </div>
     );
   }
 }
 
-export default ButtonPanel;
