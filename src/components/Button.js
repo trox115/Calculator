@@ -5,11 +5,11 @@ class Button extends React.PureComponent {
   render() {
     const cssClass = ['calc'];
     const {
-          btname,
-          wide,
-          color,
-          handleClick
-          } = this.props;
+      btname,
+      wide,
+      color,
+      handleClick,
+    } = this.props;
     if (wide) {
       cssClass.push('basis50');
     }
