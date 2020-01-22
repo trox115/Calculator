@@ -20,7 +20,8 @@ class Button extends React.PureComponent {
       <button
         className={cssClass.join(' ')}
         type="button"
-        onClick={() => handleClick(btname)}>
+        onClick={() => handleClick(btname)
+        }>
         {btname}
       </button>
     );
@@ -35,7 +36,7 @@ Button.propTypes = {
   btname: PropTypes.string.isRequired,
   wide: PropTypes.number,
   color: PropTypes.string,
-  handleClick: PropTypes.func,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default Button;
