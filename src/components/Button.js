@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Button extends React.Component {
+export default class Button extends React.Component {
     render(){
   const cssClass = ['calc'];
   if (this.props.wide) {
@@ -28,4 +28,3 @@ Button.propTypes = {
   color: PropTypes.string,
 };
 
-export default Button;
