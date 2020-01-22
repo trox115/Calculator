@@ -4,7 +4,7 @@ import Button from './Button';
 
 export default class ButtonPanel extends React.PureComponent {
   render() {
-    const { handleClick } = this.props
+    const { handleClick } = this.props;
     return (
       <div className="Buttons">
         <div className="group1">
