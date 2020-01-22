@@ -4,7 +4,12 @@ import PropTypes from 'prop-types';
 class Button extends React.Component {
   render() {
     const cssClass = ['calc'];
-    const { btname, wide, color, handleClick } = this.props;
+      const {
+          btname,
+          wide,
+          color,
+          handleClick
+            } = this.props;
     if (wide) {
       cssClass.push('basis50');
     }
