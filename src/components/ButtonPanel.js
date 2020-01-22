@@ -1,8 +1,9 @@
 import React from 'react';
 import Button from './Button';
 
-export default class ButtonPanel extends React.Component {
+export default class ButtonPanel extends React.PureComponent {
   render() {
+      const handleClick = this.props;
     return (
       <div className="Buttons">
         <div className="group1">
@@ -10,25 +11,25 @@ export default class ButtonPanel extends React.Component {
             btname="AC"
             type="Button"
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
           <Button
             btname="+/-"
             type="Button"
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
           <Button
             btname="%"
             type="Button"
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
           <Button
             btname="/"
             type="Button"
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
         </div>
         <div className="group2">
@@ -37,24 +38,24 @@ export default class ButtonPanel extends React.Component {
             type="Button"
             color="gray"
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
           <Button
             btname="8"
             type="Button"
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
           <Button
             btname="9"
             type="Button"
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
           <Button
             btname="X"
             type="Button"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
         </div>
         <div className="group3">
@@ -62,24 +63,24 @@ export default class ButtonPanel extends React.Component {
             btname="4"
             type="Button"
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
           <Button
             btname="5"
             type="Button"
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
           <Button
             btname="6"
             type="Button"
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
           <Button
             btname="-"
             type="Button"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
         </div>
         <div className="group4">
@@ -87,25 +88,25 @@ export default class ButtonPanel extends React.Component {
             btname="3"
             type="Button"
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
           <Button
             btname="2"
             type="Button"
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
           <Button
             btname="1"
             type="Button"
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
           <Button
             btname="+"
             type="Button"
             color="orange"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
         </div>
         <div className="group5">
@@ -114,18 +115,18 @@ export default class ButtonPanel extends React.Component {
             type="Button"
             wide={1}
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
           <Button
             btname="."
             type="Button"
             color="gray"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
           <Button
             btname="="
             type="Button"
-            handleClick={this.props.handleClick}
+            handleClick={handleClick}
           />
         </div>
       </div>
