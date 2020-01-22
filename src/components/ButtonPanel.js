@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import Button from './Button';
 
 export default class ButtonPanel extends React.PureComponent {
@@ -131,3 +132,7 @@ export default class ButtonPanel extends React.PureComponent {
     );
   }
 }
+
+Button.propTypes = {
+  handleClick: PropTypes.func.isRequired,
+};
