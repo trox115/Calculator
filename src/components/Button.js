@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = (props) => {
+class Button extends React.Component {
+    render(){
   const cssClass = ['calc'];
-  const prps = props;
-  const { btname, wide, color } = prps;
-  if (wide) {
+  if (this.props.wide) {
     cssClass.push('basis50');
   }
-  if (color) {
-    cssClass.push(color);
+  if (this.props.color) {
+    cssClass.push(this.props.color);
   }
   return (
-    <button className={cssClass.join(' ')} type="button" onClick={prps.onClick}>
-      {btname}
+    <button className={cssClass.join(' ')} type="button" onClick={() => this.props.handleClick(this.props.btname)}>
+      {this.props.btname}
     </button>
   );
-};
+}
+}
 
 Button.defaultProps = {
   color: 'orange',

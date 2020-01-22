@@ -12,17 +12,12 @@ class App extends React.Component {
       operation: null,
       total: null,
     };
+      this.handleClick = this.handleClick.bind(this);
   }
 
-  handle(btname) {
-    const { next, operation, total } = main(this.state, btname);
-    this.setState({
-      operation,
-      total,
-      next,
-    });
+ handleClick(btn) {
+    this.setState(main(this.state, btn));
   }
-
   render() {
     const { next, operation, total } = this.state;
     let value = null;
@@ -34,7 +29,7 @@ class App extends React.Component {
     return (
       <div id="main-div">
         <Display value={value.toString()} />
-        <ButtonPanel onClick={btname => this.handle(btname)} />
+        <ButtonPanel handleClick={this.handleClick} />
       </div>
     );
   }
