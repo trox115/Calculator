@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class Button extends React.Component {
   render() {
     const cssClass = ['calc'];
-      const { btname, wide, color } = this.props;
+    const { btname, wide, color, handleClick } = this.props;
     if (wide) {
       cssClass.push('basis50');
     }
@@ -13,9 +13,10 @@ class Button extends React.Component {
     }
     return (
       <button
-        className={ cssClass.join(' ') }
+        className={cssClass.join(' ')}
         type="button"
-        onClick={() => this.props.handleClick(btname)}>
+        onClick={() => handleClick(btname)}
+      >
         { btname }
       </button>
     );
@@ -30,6 +31,7 @@ Button.propTypes = {
   btname: PropTypes.string.isRequired,
   wide: PropTypes.number,
   color: PropTypes.string,
+  handleClick: PropTypes.func,
 };
 
 export default Button;
