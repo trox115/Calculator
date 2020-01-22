@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 class Button extends React.Component {
   render() {
     const cssClass = ['calc'];
-      const {
+    const {
           btname,
           wide,
           color,
           handleClick
-            } = this.props;
+          } = this.props;
     if (wide) {
       cssClass.push('basis50');
     }
@@ -20,9 +20,8 @@ class Button extends React.Component {
       <button
         className={cssClass.join(' ')}
         type="button"
-        onClick={() => handleClick(btname)}
-      >
-        { btname }
+        onClick={() => handleClick(btname)}>
+        {btname}
       </button>
     );
   }
