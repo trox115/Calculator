@@ -21,7 +21,8 @@ class Button extends React.PureComponent {
         className={cssClass.join(' ')}
         type="button"
         onClick={() => handleClick(btname)
-      }>
+        }
+      >
         {btname}
       </button>
     );
