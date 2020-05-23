@@ -2,7 +2,7 @@
 
 A simple and intuitive calculator created using react
 
-**Calculator** is an implementation a calculator made using React JS.
+**Calculator** is an implementation of a calculator made using React JS.
 
 The project will be reviewed and approved by a **TSE** from [Microverse](https://microverse.org)
 
