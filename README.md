@@ -18,13 +18,22 @@ In this project we used:
 - npm
 - Pretty
 
-# Author
+## Author
 
-This project was created by:
+👤 António Fernandes
 
-- António Fernandes[Github Account https://github.com/trox115](https://github.com/trox115)
+[Github](https://github.com/trox115) | [Twitter](https://twitter.com/rock_67) | [LinkedIn](https://www.linkedin.com/in/antoniomfernandes/) | [Email](mailto:email@antoniofernandes.com) | [Portfolio](https://www.antoniofernandes.com/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a star ⭐️ if you like this project!
 
 # Live Version
+![Screenshot](doc/calculator.png)
 
 You can find the stable version of this project
 [here](https://antonioreact-calculator.herokuapp.com/)
