@@ -1,10 +1,10 @@
 # Calculator
 
-A simple and intuitive calculator created using react
+A simple and intuitive calculator created using React.
 
-**Calculator** is an implementation of a calculator made using React JS.
+**Calculator** is an implementation of a calculator made using React.
 
-The project will be reviewed and approved by a **TSE** from [Microverse](https://microverse.org)
+The project will be reviewed and approved by a **TSE** from [Microverse](https://microverse.org).
 
 ## Tools used
 
@@ -44,17 +44,17 @@ All the source code in the [The Odin Project](https://www.theodinproject.com) is
 
 # Running Guide
 
-to get a running version of this project on your machine you have to install node and then follow the instructions, for installing Node go to the [node Oficial site https://nodejs.org/](https://nodejs.org/) and follow the installation instructions
+To get a running version of this project on your machine you have to install node and then follow the instructions, for installing Node go to the [node Oficial site https://nodejs.org/](https://nodejs.org/) and follow the installation instructions
 
 ```Shell
-your@pc:~$ git clone https://github.com/trox115/calculator.git
-your@pc:~$ cd calculator
+your@pc:~$ git clone https://github.com/trox115/Calculator.git
+your@pc:~$ cd Calculator
 your@pc:~$ npm install
 your@pc:~$ npm start
 
 ```
 
-then you are prompted to your browser to [http://localhost:3000/](http://localhost:3000/)
+Then you are prompted to your browser to [http://localhost:3000/](http://localhost:3000/)
 
 
 # About This Project
